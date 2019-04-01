@@ -1,9 +1,47 @@
 <ion-header>
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <!--<ion-menu-button></ion-menu-button>-->
+    </ion-buttons>
     <ion-title>signup</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="1"> </ion-col>
+      <ion-col>
+        <ion-item>
+          <ion-input placeholder="Enter your mobile No."></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input placeholder="Enter your Name"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input placeholder="House / Flat No."></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input placeholder="Location"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input placeholder="4 digit pin"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input placeholder="Re-enter 4 digit pin"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row></ion-row>
+    <ion-row>
+      <ion-col >
+        <ion-button style="float: left" color="primary">Signup </ion-button>
+      </ion-col>
+      <ion-col class="floatRight">
+         <ion-button style="float: right"  color="danger" (click)="cancelSignup()">cancel </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
 
 </ion-content>
